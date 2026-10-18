@@ -10,7 +10,7 @@ class ApplicationController < ActionController::API
   def set_request_headers
     headers["Access-Control-Allow-Origin"] = "*"
     headers["Access-Control-Allow-Headers"] = "*"
-    headers["Access-Control-Allow-Methods"] = "GET, POST"
+    headers["Access-Control-Allow-Methods"] = "GET, POST, OPTIONS"
   end
 
   def set_cache_headers
